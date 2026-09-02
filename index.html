@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad en Clase</title>
+</head>
+<body>
+    <header>
+        <h1>Mi Sitio Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#horario">Horario</a></li>
+                <li><a href="#inscripcion">Inscripción</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido</h2>
+            <p>Este es el primer párrafo de bienvenida a nuestra página de actividad en clase. Aquí aprenderemos a estructurar correctamente un documento HTML5.</p>
+            <p>El segundo párrafo explica que usaremos etiquetas semánticas para darle significado a nuestro contenido, facilitando la accesibilidad y la indexación.</p>
+            
+            <figure>
+                <img src="https://picsum.photos/400/200" alt="Imagen aleatoria de demostración">
+                <figcaption>Figura 1: Ejemplo de imagen con leyenda.</figcaption>
+            </figure>
+        </section>
+
+        <section id="horario">
+            <h2>Horario del Ciclo</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Lunes</th>
+                        <th>Miércoles</th>
+                        <th>Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>08:00 - 10:00</td>
+                        <td>Programación Web</td>
+                        <td>Base de Datos</td>
+                        <td>Programación Web</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 - 12:00</td>
+                        <td>Matemáticas</td>
+                        <td>Redes</td>
+                        <td>Matemáticas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="inscripcion">
+            <h2>Formulario de Inscripción</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                
+                <div>
+                    <label for="codigo">Código de estudiante:</label>
+                    <input type="text" id="codigo" name="codigo" required>
+                </div>
+                
+                <div>
+                    <label for="carrera">Carrera:</label>
+                    <select id="carrera" name="carrera" required>
+                        <option value="">Seleccione una carrera...</option>
+                        <option value="ing_sistemas">Ingeniería de Sistemas</option>
+                        <option value="ing_software">Ingeniería de Software</option>
+                        <option value="ciencias_comp">Ciencias de la Computación</option>
+                    </select>
+                </div>
+                
+                <fieldset>
+                    <legend>Turno de preferencia:</legend>
+                    <div>
+                        <input type="radio" id="turno_manana" name="turno" value="mañana" required>
+                        <label for="turno_manana">Mañana</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="turno_tarde" name="turno" value="tarde" required>
+                        <label for="turno_tarde">Tarde</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="turno_noche" name="turno" value="noche" required>
+                        <label for="turno_noche">Noche</label>
+                    </div>
+                </fieldset>
+                
+                <div>
+                    <input type="checkbox" id="aceptacion" name="aceptacion" required>
+                    <label for="aceptacion">Acepto los términos y condiciones</label>
+                </div>
+                
+                <button type="submit">Enviar Inscripción</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Actividad de Programación Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
