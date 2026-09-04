@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta lang="es">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Html programacion web</title>
+</head>
+<body>
+    <header>
+        <h1>Mi Sitio Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#horario">Horario</a></li>
+                <li><a href="#inscripcion">Inscripción</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, nobis repellendus possimus quia sequi aperiam quis sed vel est voluptates earum. Dolores quasi excepturi corrupti quae veritatis necessitatibus doloribus laudantium..</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, nobis repellendus possimus quia sequi aperiam quis sed vel est voluptates earum. Dolores quasi excepturi corrupti quae veritatis necessitatibus doloribus laudantium..</p>
+                <img src="images (5).png" alt="Imagen aleatoria de demostración">
+        </section>
+        <section id="horario">
+            <h2>Horario del Ciclo</h2>
+            <table border="2">
+
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>08:00 - 10:00</td>
+                        <td></td>
+                        <td>Estadistica</td>
+                        <td>Progra Web</td>
+                        <td>Redes</td>
+                        <td>Gefi</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 - 12:00</td>
+                        <td>Progra Web</td>
+                        <td>Estadistica</td>
+                        <td></td>
+                        <td>Redes</td>
+                        <td>Gefi</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 - 14:00</td>
+                        <td>Progra Web</td>
+                        <td></td>
+                        <td>Estadistica</td>
+                        <td>Redes</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>14:00 - 16:00</td>
+                        <td></td>
+                        <td></td>
+                        <td>Estadistica</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="inscripcion">
+            <h2>Formulario de Inscripción</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <br>
+                <div>
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <br>
+                <div>
+                    <label for="codigo">Codigo:</label>
+                    <input type="text" id="codigo" name="codigo" required>
+                </div>
+                <br>
+                <div>
+                    <label for="carrera">Carrera:</label>
+                    <select id="carrera" name="carrera" required>
+                        <option value="">Seleccione una carrera...</option>
+                        <option value="ing_sistemas">Ingeniería de Sistemas</option>
+                        <option value="ing_software">Ingeniería de Software</option>
+                        <option value="ciencias_comp">Ciencias de la Computación</option>
+                    </select>
+                </div>
+                <br>
+                    <div>
+                        <input type="radio" id="turno_manana" name="turno" value="mañana" required>
+                        <label for="turno_manana">Mañana</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="turno_tarde" name="turno" value="tarde" required>
+                        <label for="turno_tarde">Tarde</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="turno_noche" name="turno" value="noche" required>
+                        <label for="turno_noche">Noche</label>
+                    </div>
+                <br>
+                <div>
+                    <input type="checkbox" id="aceptacion" name="aceptacion" required>
+                    <label for="aceptacion">Acepto los términos y condiciones</label>
+                </div>
+                <br>
+                <button type="submit">Enviar Inscripción</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Actividad de Programación Web.</p>
+    </footer>
+
+</body>
