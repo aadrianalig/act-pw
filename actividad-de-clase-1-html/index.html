@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Semana 2 - Programación Web</title>
+</head>
+<body>
+    <header>
+        <h1>Programación Web - Semestre 2026-2</h1>
+        <nav>   
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#horario">Horario</a></li>
+                <li><a href="#inscripcion">Inscripción</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+            <h2>Sobre el curso</h2>
+            <p>Una vez consolidada la estructura y la presentación visual, daremos 
+                el salto hacia la interactividad utilizando JavaScript, lo que nos 
+                permitirá modificar el DOM para cambiar lo que se ve sin tener que 
+                recargar la página. Esta etapa es fundamental para entender 
+                cómo funciona el frontend moderno y la experiencia de usuario antes de 
+                introducirnos a librerías avanzadas como React.</p>
+            <p>Hacia el final del curso, completaremos nuestra visión como futuros 
+                ingenieros de sistemas dominando el lado del backend, donde implementaremos 
+                el modelo de arquitectura cliente-servidor. Aprenderemos a construir 
+                nuestra propia lógica en el servidor utilizando Node.js con Express y nos 
+                conectaremos a bases de datos para guardar la información de forma 
+                persistente, logrando así el desarrollo de aplicaciones web completas.</p>
+            <figure>
+                <img src="https://www.weareamundsen.com/wp-content/uploads/2017/02/code-1076536_960_720.jpg" alt="Vista exterior de los pabellones de la universidad"> 
+                <figcaption>Fig. 1 — Diseño llamativo codigo </figcaption>
+            </figure>     
+
+        
+        
+            <h2>Horario de clases</h2>
+            <table border="2">
+                
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Hora</th>
+                        <th>Actividad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>17:00 - 20:00</td>
+                        <td>Clase presencial</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>18:00 - 20:00</td>
+                        <td>Clase Virtual</td>
+                    </tr>
+                </tbody>
+            </table>
+       
+    <h2>Formulario de Inscripción de Proyectos</h2>  
+    <form action="/registro" method="post"></form>
+    
+                    
+                    
+                    <div>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div>
+                        <label for="correo">Correo institucional:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div>
+                        <label for="codigo">Código de alumno:</label>
+                        <input type="number" id="codigo" name="codigo" required>
+                    </div>
+                    <div>
+                        <label for="carrera">Carrera:</label>
+                        <select id="carrera" name="carrera" required>
+                            <option value="" disabled selected>Selecciona tu carrera</option>
+                            <option value="sistemas">Ingeniería de Sistemas</option>
+                            <option value="industrial">Ingeniería Industrial</option>
+                            <option value="software">Ingeniería de Software</option>
+                        </select>
+                    </div>
+                
+                
+                    
+                    <p>Forumalrio de selección final:</p>
+                    
+                    <input type="radio" id="enfoque_frontend" name="enfoque" value="frontend" required>
+                    <label for="enfoque_frontend">Frontend (UI/UX)</label><br>
+                    
+                    <input type="radio" id="enfoque_backend" name="enfoque" value="backend">
+                    <label for="enfoque_backend">Backend (Lógica y BD)</label><br>
+                    
+                    <input type="radio" id="enfoque_fullstack" name="enfoque" value="fullstack">
+                    <label for="enfoque_fullstack">Fullstack</label><br>
+                
+                <div>
+                    <input type="checkbox" id="aceptacion" name="aceptacion" required>
+                    <label for="aceptacion">Confirmo que los datos ingresados son correctos y acepto las condiciones del curso.</label>
+                </div>
+                <div>
+                    <button type="submit">Enviar Inscripción</button>
+                </div>
+            </form>
+        </main>                   
+    <footer>
+        <p>&copy; 2026 Facultad de Ingeniería - Universidad de Lima.</p>
+    </footer>        
+</body>
+</html>
